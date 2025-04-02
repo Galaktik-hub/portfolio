@@ -1,21 +1,10 @@
-import React from 'react';
-import Header from './components/Header';
-import Intro from './components/Intro';
-import SkillTitle from "./components/SkillTitle.tsx";
-import FormationList from './components/FormationList';
-import Footer from './components/Footer';
-import './index.css';
+import './index.css'
+import AppRoutes from "./route";
 
-const App: React.FC = () => {
+function App() {
     return (
-        <>
-            <Header />
-            <Intro />
-            <SkillTitle />
-            <FormationList />
-            <Footer />
-        </>
-    );
-};
+        <AppRoutes />
+    )
+}
 
 export default App;
