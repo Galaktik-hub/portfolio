@@ -1,16 +1,9 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
-
-export interface Project {
-    image: string;
-    title: string;
-    subtitle: string;
-    points: string[];
-}
+import ProjectCard, {ProjectCardProps} from "./ProjectCard";
 
 interface ProjectsSectionProps {
     color: string;
-    projects: Project[];
+    projects: ProjectCardProps[];
 }
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects, color }) => {

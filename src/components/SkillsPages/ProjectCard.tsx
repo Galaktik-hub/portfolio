@@ -1,14 +1,15 @@
-interface ProjectCardProps {
+export interface ProjectCardProps {
     image: string;
     title: string;
     subtitle: string;
     points: string[];
+    voirPlus?: string;
 }
 
-function ProjectCard ({ image, title, subtitle, points }: ProjectCardProps) {
+function ProjectCard({ image, title, subtitle, points, voirPlus }: ProjectCardProps) {
     return (
-        <div className="project-card">
-            <img src={image} alt={title}/>
+        <div className="project-card" style={{ backgroundImage: `url(${image})` }}>
+            <div className="overlay"></div>
             <div className="project-card-content">
                 <h3 className="project-card-title">{title}</h3>
                 <h4 className="project-card-subtitle">{subtitle}</h4>
@@ -17,7 +18,11 @@ function ProjectCard ({ image, title, subtitle, points }: ProjectCardProps) {
                         <li key={index}>{point}</li>
                     ))}
                 </ul>
-                <button>Voir plus</button>
+                {voirPlus && (
+                    <a href={voirPlus}>
+                        <button>Voir plus</button>
+                    </a>
+                )}
             </div>
         </div>
     );

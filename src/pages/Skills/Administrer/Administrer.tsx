@@ -1,25 +1,27 @@
 import React from "react";
-import ProjectsSection, {Project} from "../../../components/SkillsPages/ProjectsSection.tsx";
+import ProjectsSection from "../../../components/SkillsPages/ProjectsSection.tsx";
 import SkillDescription from "../../../components/SkillsPages/SkillDescription.tsx";
 import SkillTechniques, {Technique} from "../../../components/SkillsPages/SkillTechniques.tsx";
 import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
+import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
 
-const projects: Project[] = [
+const projects: ProjectCardProps[] = [
     {
-        image: "https://via.placeholder.com/350x200",
-        title: "Projet 1",
-        subtitle: "Sous-titre Projet 1",
+        image: "public/projects/serveur-web.jpg",
+        title: "Hébergement web",
+        subtitle: "Mise en place d'un serveur web",
         points: [
-            "Description du point 1",
-            "Description du point 2",
-            "Description du point 3",
+            "Configuration serveur Apache",
+            "Configuration NAT, Firewall, DNS",
+            "Mise en place d'un serveur HTTPS avec Let's Encrypt",
         ],
+        voirPlus: "https://alexis-telle.fr"
     },
     {
-        image: "https://via.placeholder.com/350x200",
+        image: "public/projects/serveur-web.jpg",
         title: "Projet 2",
         subtitle: "Sous-titre Projet 2",
         points: [
