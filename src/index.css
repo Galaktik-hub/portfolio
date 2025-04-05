@@ -219,14 +219,22 @@ a {
     border-radius: 4px;
     position: relative;
     max-width: 400px;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, background 0.6s ease-in-out;
 }
 
 .forma:hover {
     transform: translateY(-5px);
-    background: linear-gradient(#67dd9a, #b6f829);
+    background: linear-gradient(
+            to top,
+            #67dd9a 0%,
+            #b6f829 40%,
+            #e7e7e7 60%,
+            #e7e7e7 100%
+    );
     cursor: pointer;
 }
+
+
 
 .forma::before {
     content: '';
