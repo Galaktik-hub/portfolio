@@ -213,6 +213,13 @@ a {
     border-radius: 4px;
     position: relative;
     max-width: 400px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.forma:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(#67dd9a, #b6f829);
+    cursor: pointer;
 }
 
 .forma::before {
