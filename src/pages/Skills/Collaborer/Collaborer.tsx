@@ -64,7 +64,7 @@ const Collaborer: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"COLLABORER"} subtitle={"Une équipe, un projet, et quelques cafés"} backgroundImage={"../public/banner-collaborer.jpg"}/>
+            <Banner title={"COLLABORER"} subtitle={"Une équipe, un projet, et quelques cafés"} backgroundImage={"../public/banners/banner-collaborer.jpg"}/>
             <div className="container">
                 <SkillDescription title={"Qu'est-ce que la compétence collaborer ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />

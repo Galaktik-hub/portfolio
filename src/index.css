@@ -363,7 +363,7 @@ a {
 
 /* Page Compétences */
 .competences-banner {
-    background: url('../public/banner-realiser.jpg') no-repeat center;
+    background: url('../public/banners/banner-realiser.jpg') no-repeat center;
     background-size: cover;
     padding: 100px 0;
     text-align: center;

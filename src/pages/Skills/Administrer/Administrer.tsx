@@ -72,7 +72,7 @@ const Administrer: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"ADMINISTRER"} subtitle={"Être le chef d'orchestre d'une architecture réseau"} backgroundImage={"../public/banner-administrer.jpg"}/>
+            <Banner title={"ADMINISTRER"} subtitle={"Être le chef d'orchestre d'une architecture réseau"} backgroundImage={"../public/banners/banner-administrer.jpg"}/>
             <div className="container">
                 <SkillDescription title={"Qu'est-ce que la compétence administrer ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />

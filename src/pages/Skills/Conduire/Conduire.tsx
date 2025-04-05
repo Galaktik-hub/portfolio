@@ -64,7 +64,7 @@ const Conduire: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"CONDUIRE"} subtitle={"Du concept à la réalité"} backgroundImage={"../public/banner-conduire.jpg"}/>
+            <Banner title={"CONDUIRE"} subtitle={"Du concept à la réalité"} backgroundImage={"../public/banners/banner-conduire.jpg"}/>
             <div className="container">
                 <SkillDescription title={"Qu'est-ce que la compétence conduire ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />

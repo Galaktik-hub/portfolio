@@ -73,7 +73,7 @@ const Optimiser: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"OPTIMISER"} subtitle={"Parce que chaque microseconde compte"} backgroundImage={"../public/banner-optimiser.jpg"}/>
+            <Banner title={"OPTIMISER"} subtitle={"Parce que chaque microseconde compte"} backgroundImage={"../public/banners/banner-optimiser.jpg"}/>
             <div className="container">
                 <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />
