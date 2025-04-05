@@ -32,24 +32,40 @@ const projects: Project[] = [
 
 const techniques: Technique[] = [
     {
-        title: "Technique 1",
+        title: "Algorithmes",
         points: [
-            "Point technique 1",
-            "Point technique 2",
-            "Point technique 3",
+            "Algorithmes de tri (tri rapide, tri fusion, tri par tas, etc.)",
+            "Algorithme de Dijkstra, A*",
+            "Diviser pour régner (dichotomie, recherche binaire)",
+            "Recherche en profondeur et en largeur",
         ],
     },
     {
-        title: "Technique 2",
+        title: "Structures de données",
         points: [
-            "Point technique A",
-            "Point technique B",
-            "Point technique C",
+            "Listes chaînées",
+            "Arbres binaires & de recherche",
+            "Graphes (représentation par matrice d'adjacence, liste d'adjacence)",
+            "Tables de hachage",
+            "Tas"
         ],
     },
+    {
+        title: "Design Patterns",
+        points: [
+            "Singleton",
+            "Factory",
+            "Visitor",
+            "Chain of responsability",
+            "Etc."
+        ],
+    }
 ];
 
-const description = "Partir des exigences fonctionnelles et techniques pour concevoir une solution technique. Réaliser des tests unitaires, d'intégration et de validation. Développer la solution technique en respectant les normes de codage et les bonnes pratiques. Intégrer la solution dans l'environnement de production.";
+const description = "Une application qui marche, c'est bien, une application qui marche vite, c'est mieux. C'est pourquoi il est important de toujours s'efforcer à optimiser son code. " +
+    "Il faut alors savoir formaliser et modéliser des situations complexes à l'aide d'algorithmes efficaces et des structures de données adaptées. " +
+    "Il est d'autant plus important, dans un contexte professionnel, d'améliorer les performances des programmes qu'on écrit, que ce soit pour limiter l'impact environnemental que nos solutions ont, ou bien pour limiter l'impact économique qu'elles ont. " +
+    "Ainsi, cette compétence nous pousse à employer des schémas de raisonnement construits tout en justifiant nos choix technologiques pour obtenir des résultats probants.";
 
 const color = "optimiser";
 
@@ -57,7 +73,7 @@ const Optimiser: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"OPTIMISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} />
+            <Banner title={"OPTIMISER"} subtitle={"Parce que chaque microseconde compte"} />
             <div className="container">
                 <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />

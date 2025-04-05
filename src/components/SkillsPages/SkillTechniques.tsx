@@ -12,7 +12,7 @@ interface SkillTechniquesProps {
 
 const SkillTechniques: React.FC<SkillTechniquesProps> = ({ techniques, color }) => (
     <section className="section skill-techniques">
-        <h2 className={`section-title section-title-${color}`}>Compétences techniques mises en oeuvre</h2>
+        <h2 className={`section-title section-title-${color}`}>Compétences techniques mises en œuvre</h2>
         <div className="techniques-container">
             {techniques.map((technique, index) => (
                 <div className="technique-item" key={index}>

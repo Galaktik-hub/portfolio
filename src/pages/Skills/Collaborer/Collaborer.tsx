@@ -32,24 +32,31 @@ const projects: Project[] = [
 
 const techniques: Technique[] = [
     {
-        title: "Technique 1",
+        title: "Outils collaboratifs",
         points: [
-            "Point technique 1",
-            "Point technique 2",
-            "Point technique 3",
+            "Git (contrôle de version)",
+            "GitHub/GitLab/Bitbucket (hébergement de code)",
+            "YouTrack/Jira (gestion de projet)",
+            "Confluence (Wiki d'équipe)",
+            "Office 365 (suite bureautique)",
         ],
     },
     {
-        title: "Technique 2",
+        title: "Méthodes de travail",
         points: [
-            "Point technique A",
-            "Point technique B",
-            "Point technique C",
+            "Méthode Agile (Scrum, Kanban)",
+            "Merge Request",
+            "Revues de code",
+            "Protection du code",
+            "Gestion des conflits",
         ],
     },
 ];
 
-const description = "Partir des exigences fonctionnelles et techniques pour concevoir une solution technique. Réaliser des tests unitaires, d'intégration et de validation. Développer la solution technique en respectant les normes de codage et les bonnes pratiques. Intégrer la solution dans l'environnement de production.";
+const description = "Plus on est de dévs, plus on code ! Enfin, encore faut-il savoir comment travailler ensemble... " +
+    "Les projets informatiques sont plus ambitieux les uns que les autres, il est alors nécessaire d'acquérir, de développer et d'exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique. " +
+    "Situer son rôle et ses missions au sein d'une équipe, rendre compte de son activité professionnelle et s'intégrer sont des choses que tout développeur est ammené à faire au cours de sa carrière (probablement plusieurs fois). " +
+    "Il faut alors être en capacité de mobiliser des compétences interpersonnelles pour travailler dans une équipé informatique tout en développant une communication efficace et collaborative.";
 
 const color = "collaborer";
 
@@ -57,9 +64,9 @@ const Collaborer: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"OPTIMISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} />
+            <Banner title={"COLLABORER"} subtitle={"Une équipe, un projet, et quelques cafés"} />
             <div className="container">
-                <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} color={color}/>
+                <SkillDescription title={"Qu'est-ce que la compétence collaborer ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />
                 <ProjectsSection projects={projects} color={color}/>
             </div>

@@ -32,24 +32,31 @@ const projects: Project[] = [
 
 const techniques: Technique[] = [
     {
-        title: "Technique 1",
+        title: "Planification & gestion de projet",
         points: [
-            "Point technique 1",
-            "Point technique 2",
-            "Point technique 3",
+            "Agile (Scrum, Kanban)",
+            "Cycle en V",
+            "Tableau RACI",
+            "Diagramme de Gantt",
+            "Analyse SWOT",
         ],
     },
     {
-        title: "Technique 2",
+        title: "Outils de gestion de projet",
         points: [
-            "Point technique A",
-            "Point technique B",
-            "Point technique C",
+            "YouTrack",
+            "Jira",
+            "Trello",
+            "GanttProject",
         ],
     },
 ];
 
-const description = "Partir des exigences fonctionnelles et techniques pour concevoir une solution technique. Réaliser des tests unitaires, d'intégration et de validation. Développer la solution technique en respectant les normes de codage et les bonnes pratiques. Intégrer la solution dans l'environnement de production.";
+const description = "Beaucoup de gens ont des idées, mais peu d'entre eux savent les mettre en œuvre. " +
+    "C'est pourquoi la compétence \"Conduire\" nous apprend comment satisfaire les besoins des clients, en adoptant une démarche proactive, créative et critique. " +
+    "Il est alors important de savoir comment piloter un projet informatique avec des méthodes classiques ou agiles, pour pouvoir lancer, maintenir ou faire évoluer quelconque projet informatique. " +
+    "Il est alors de notre ressort d'appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs. " +
+    "Et pour ce faire, il faut savoir formaliser et concrétiser les besoins du client afin de définir et mettre en œuvre une démarche de suivi de projet.";
 
 const color = "conduire";
 
@@ -57,9 +64,9 @@ const Conduire: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"OPTIMISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} />
+            <Banner title={"CONDUIRE"} subtitle={"Du concept à la réalité"} />
             <div className="container">
-                <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} color={color}/>
+                <SkillDescription title={"Qu'est-ce que la compétence conduire ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />
                 <ProjectsSection projects={projects} color={color}/>
             </div>

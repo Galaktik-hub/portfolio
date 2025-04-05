@@ -32,24 +32,30 @@ const projects: Project[] = [
 
 const techniques: Technique[] = [
     {
-        title: "Technique 1",
+        title: "Base de données",
         points: [
-            "Point technique 1",
-            "Point technique 2",
-            "Point technique 3",
+            "SQL (MySQL, PostgreSQL)",
+            "NoSQL (MongoDB)",
+            "Indexation et optimisation des requêtes",
+            "Sécurité des données (Hachage)",
         ],
     },
     {
-        title: "Technique 2",
+        title: "Respect des réglementations",
         points: [
-            "Point technique A",
-            "Point technique B",
-            "Point technique C",
+            "RGPD",
+            "Loi Informatique et Libertés",
+            "Consentement utilisateur",
+            "Qualité et intégrité des données"
         ],
     },
 ];
 
-const description = "Partir des exigences fonctionnelles et techniques pour concevoir une solution technique. Réaliser des tests unitaires, d'intégration et de validation. Développer la solution technique en respectant les normes de codage et les bonnes pratiques. Intégrer la solution dans l'environnement de production.";
+const description = "Plus les années passent, plus l'informatique devient omniprésente dans notre quotidien. Il est donc crucial de savoir comment traiter les pétaoctets de données qui circulent en ligne. " +
+    "À travers la compétence \"Gérer\", nous apprenons à concevoir, gérer, administrer et exploiter les données et à les mettre à disposition des utilisateurs. " +
+    "Il est alors important de savoir comment optimiser une base de données, afin de la faire interagir avec une application, tout en prêtant une attention particulière à la sécurité des données utilisateurs. " +
+    "Respecter les réglementations sur le respect de la vie privée et la protection des données personnelles est alors un enjeu majeur de cette compétence, il faut se conformer aux diverses lois en vigueur (RGPD). " +
+    "Évidemment, la finalité de cette compétence est de savoir comment manipuler des données hétérogènes afin de les rendre exploitable et de les restituer à travers la programmation et la visualisation.";
 
 const color = "gerer";
 
@@ -57,9 +63,9 @@ const Gerer: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"OPTIMISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} />
+            <Banner title={"GÉRER"} subtitle={"L'architecte de vos données"} />
             <div className="container">
-                <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} color={color}/>
+                <SkillDescription title={"Qu'est-ce que la compétence gérer ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />
                 <ProjectsSection projects={projects} color={color}/>
             </div>

@@ -32,24 +32,39 @@ const projects: Project[] = [
 
 const techniques: Technique[] = [
     {
-        title: "Technique 1",
+        title: "Services réseaux",
         points: [
-            "Point technique 1",
-            "Point technique 2",
-            "Point technique 3",
+            "TCP/IP",
+            "HTTP(S)",
+            "DNS",
+            "DHCP",
+            "FTP",
+            "SSH",
+            "SMTP (IMAP, POP3)",
+            "VPN",
+            "Proxy",
+            "NAT",
+            "Firewall",
         ],
     },
     {
-        title: "Technique 2",
+        title: "Déploiement et sécurisation",
         points: [
-            "Point technique A",
-            "Point technique B",
-            "Point technique C",
+            "Apache",
+            "PHPMyAdmin",
+            "Ubuntu Server",
+            "SSL/TLS",
+            "Let's Encrypt",
+            "Nom de domaine",
+            "Netkit"
         ],
     },
 ];
 
-const description = "Partir des exigences fonctionnelles et techniques pour concevoir une solution technique. Réaliser des tests unitaires, d'intégration et de validation. Développer la solution technique en respectant les normes de codage et les bonnes pratiques. Intégrer la solution dans l'environnement de production.";
+const description = "Une fois la solution technique développée, il faut s'assurer d'avoir les connaissances nécessaires pour la déployer, sinon elle sera difficile d'accès pour vos clients... " +
+    "Ainsi, la compétence administrer nous assure d'avoir le savoir nécessaire pour concevoir et développer des applications communicantes, tout en maintenant un niveau de sécurité élevé. " +
+    "Elle nout permet d'appliquer les normes de sécurité en vigueur et les bonnes pratiques architecturales et de sécurité tout en offrant une qualité de service optimale. " +
+    "Évidemment, à la fin, il nous est possible de déployer des solutions sur des serveurs et des services réseaux virtualisés tout en s'assurant que ces derniers sont sécurisés.";
 
 const color = "administrer";
 
@@ -57,9 +72,9 @@ const Administrer: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"OPTIMISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} />
+            <Banner title={"ADMINISTRER"} subtitle={"Être le chef d'orchestre d'une architecture réseau"} />
             <div className="container">
-                <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} color={color}/>
+                <SkillDescription title={"Qu'est-ce que la compétence administrer ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />
                 <ProjectsSection projects={projects} color={color}/>
             </div>
