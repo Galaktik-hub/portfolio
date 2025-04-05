@@ -397,14 +397,38 @@ a {
     position: relative;
 }
 
+.section-title {
+    position: relative;
+    --line-color: black; /* couleur par défaut */
+}
+
 .section-title::before {
     content: '';
     width: 50px;
     height: 4px;
-    background: currentColor;
+    background: var(--line-color);
     position: absolute;
     bottom: -10px;
     left: 0;
+}
+
+.section-title-realiser {
+    --line-color: #b80905;
+}
+.section-title-optimiser {
+    --line-color: #ed8c51;
+}
+.section-title-administrer {
+    --line-color: #efba11;
+}
+.section-title-gerer {
+    --line-color: #8cc850;
+}
+.section-title-conduire {
+    --line-color: #0a215e;
+}
+.section-title-collaborer {
+    --line-color: #0f0f0f;
 }
 
 /* Section "Qu'est ce que la compétence xxx ?" */
@@ -520,20 +544,6 @@ a {
 
 .project-card button:hover {
     background-color: #333;
-}
-
-/* Couleurs uniques pour chaque compétence */
-.skill-color-1 {
-    color: #e74c3c;
-}
-.skill-color-2 {
-    color: #3498db;
-}
-.skill-color-3 {
-    color: #2ecc71;
-}
-.skill-color-4 {
-    color: #9b59b6;
 }
 
 /* ----- Styles pour le composant StickyBackArrow ----- */

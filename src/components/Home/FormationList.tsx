@@ -50,7 +50,7 @@ const formationData: Formation[] = [
             "Algorithmique",
             "Complexité",
             "Structures de données",
-            "Conception orientée objet",
+            "Programmation orientée objet",
             "Design patterns",
         ]
     },

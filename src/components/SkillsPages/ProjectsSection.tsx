@@ -9,13 +9,14 @@ export interface Project {
 }
 
 interface ProjectsSectionProps {
+    color: string;
     projects: Project[];
 }
 
-const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
+const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects, color }) => {
     return (
         <section className="section">
-            <h2 className="section-title">Projets</h2>
+            <h2 className={`section-title section-title-${color}`}>Projets</h2>
             <div className="project-cards">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />

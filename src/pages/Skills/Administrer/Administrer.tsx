@@ -51,15 +51,17 @@ const techniques: Technique[] = [
 
 const description = "Partir des exigences fonctionnelles et techniques pour concevoir une solution technique. Réaliser des tests unitaires, d'intégration et de validation. Développer la solution technique en respectant les normes de codage et les bonnes pratiques. Intégrer la solution dans l'environnement de production.";
 
+const color = "administrer";
+
 const Administrer: React.FC = () => {
     return (
         <div>
             <Header />
             <Banner title={"OPTIMISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} />
             <div className="container">
-                <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} />
-                <SkillTechniques techniques={techniques} />
-                <ProjectsSection projects={projects} />
+                <SkillDescription title={"Qu'est-ce que la compétence optimiser ?"} description={description} color={color}/>
+                <SkillTechniques techniques={techniques} color={color} />
+                <ProjectsSection projects={projects} color={color}/>
             </div>
             <StickyBackArrow />
             <Footer />
