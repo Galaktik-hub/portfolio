@@ -76,7 +76,7 @@ const Realiser: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"RÉALISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} />
+            <Banner title={"RÉALISER"} subtitle={"Concevoir, tester, coder, tester et intégrer"} backgroundImage={"../public/banner-realiser.jpg"} />
             <div className="container">
                 <SkillDescription title={"Qu'est-ce que la compétence réaliser ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />

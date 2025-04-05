@@ -63,7 +63,7 @@ const Gerer: React.FC = () => {
     return (
         <div>
             <Header />
-            <Banner title={"GÉRER"} subtitle={"L'architecte de vos données"} />
+            <Banner title={"GÉRER"} subtitle={"L'architecte de vos données"} backgroundImage={"../public/banner-gerer.jpg"}/>
             <div className="container">
                 <SkillDescription title={"Qu'est-ce que la compétence gérer ?"} description={description} color={color}/>
                 <SkillTechniques techniques={techniques} color={color} />
