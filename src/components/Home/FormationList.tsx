@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface Formation {
+    url: string;
     year: string;
     title: string;
     school: string;
@@ -10,6 +11,7 @@ interface Formation {
 
 const formationData: Formation[] = [
     {
+        url: "/realiser",
         year: "2023 - 2026",
         title: "Réaliser",
         school: "IUT de Marne-la-Vallée",
@@ -35,6 +37,7 @@ const formationData: Formation[] = [
         ]
     },
     {
+        url: "/optimiser",
         year: "2023 - 2026",
         title: "Optimiser",
         school: "IUT de Marne-la-Vallée",
@@ -52,6 +55,7 @@ const formationData: Formation[] = [
         ]
     },
     {
+        url: "administrer",
         year: "2023 - 2026",
         title: "Administrer",
         school: "IUT de Marne-la-Vallée",
@@ -76,6 +80,7 @@ const formationData: Formation[] = [
         ]
     },
     {
+        url: "/gerer",
         year: "2023 - 2026",
         title: "Gérer",
         school: "IUT de Marne-la-Vallée",
@@ -93,6 +98,7 @@ const formationData: Formation[] = [
         ]
     },
     {
+        url: "/conduire",
         year: "2023 - 2026",
         title: "Conduire",
         school: "IUT de Marne-la-Vallée",
@@ -110,6 +116,7 @@ const formationData: Formation[] = [
         ]
     },
     {
+        url: "/collaborer",
         year: "2023 - 2026",
         title: "Collaborer",
         school: "IUT de Marne-la-Vallée",
@@ -135,27 +142,29 @@ interface FormationProps {
 
 const FormationComponent: React.FC<FormationProps> = ({ formation }) => {
     return (
-        <div className="forma">
-            <span className="forma-year">{formation.year}</span>
-            <div className="format-title-wrapper">
-                <h3 className="forma-title">
-                    {formation.title}
-                    <br />
-                </h3>
-                <p>{formation.school}</p>
+        <a href={formation.url} className="formation-link">
+            <div className="forma">
+                <span className="forma-year">{formation.year}</span>
+                <div className="format-title-wrapper">
+                    <h3 className="forma-title">
+                        {formation.title}
+                        <br />
+                    </h3>
+                    <p>{formation.school}</p>
+                </div>
+                <span className="forma-title">Compétences acquises</span>
+                <ul className="forma-text list">
+                    {formation.acquiredSkills.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
+                <ul className="forma-skills">
+                    {formation.skills.map((skill, index) => (
+                        <li key={index}>{skill}</li>
+                    ))}
+                </ul>
             </div>
-            <span className="forma-title">Compétences acquises</span>
-            <ul className="forma-text list">
-                {formation.acquiredSkills.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
-            <ul className="forma-skills">
-                {formation.skills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                ))}
-            </ul>
-        </div>
+        </a>
     );
 };
 

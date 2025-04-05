@@ -203,6 +203,12 @@ a {
     color: #141414;
 }
 
+.formation-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .forma {
     display: grid;
     grid-template-columns: 1fr 1fr;
