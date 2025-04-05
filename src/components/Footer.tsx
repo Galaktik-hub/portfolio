@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
                     <li>contact [at] alexis-telle.fr</li>
                     <li>+(33)7. 68. 13. 86. 18</li>
                 </ul>
-                <p className="footer-copy">Site créé avec React & CSS</p>
+                <p className="footer-copy">Site créé en React</p>
             </div>
         </footer>
     );

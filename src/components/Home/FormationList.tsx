@@ -11,74 +11,99 @@ interface Formation {
 const formationData: Formation[] = [
     {
         year: "2023 - 2026",
-        title: "Réaliser un développement d’application",
+        title: "Réaliser",
         school: "IUT de Marne-la-Vallée",
         acquiredSkills: [
-            "Partir des exigences et aller jusqu’à une application complète"
+            "Développer - c'est-à-dire concevoir, coder, tester, et intégrer - une solution informatique pour un client."
         ],
         skills: [
-            "Conception fonctionnelle",
             "Codage",
             "Tests unitaires",
-            "Intégration continue",
-            "Documentation technique"
+            "Documentation technique",
+            "Java",
+            "C",
+            "PHP",
+            "Python",
+            "HTML/CSS",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Node.js",
+            "TailWindCSS",
+            "SQL",
+            "Git",
         ]
     },
     {
         year: "2023 - 2026",
-        title: "Optimiser des applications informatiques",
+        title: "Optimiser",
         school: "IUT de Marne-la-Vallée",
         acquiredSkills: [
-            "Sélectionner les algorithmes adéquats pour répondre à un problème donné"
+            "Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d'éxécution, précision, consommation de ressources..."
         ],
         skills: [
-            "Analyse de performance",
             "Optimisation de code",
-            "Profiling",
-            "Test de charge",
-            "Benchmarking"
+            "Benchmarking",
+            "Algorithmique",
+            "Complexité",
+            "Structures de données",
+            "Conception orientée objet",
+            "Design patterns",
         ]
     },
     {
         year: "2023 - 2026",
-        title: "Administrer des systèmes informatiques communicants complexes",
+        title: "Administrer",
         school: "IUT de Marne-la-Vallée",
         acquiredSkills: [
-            "Déployer des services dans une architecture réseau"
+            "Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d'une organisation."
         ],
         skills: [
             "Configuration système",
-            "Virtualisation",
             "Déploiement de services",
-            "Surveillance réseau",
-            "Sécurité informatique"
+            "Sécurité informatique",
+            "Apache",
+            "Ubuntu Server",
+            "PHPMyAdmin",
+            "TCP/IP",
+            "DNS",
+            "DHCP",
+            "Firewall",
+            "VPN",
+            "SSH",
+            "NAT",
+            "HTTPS",
         ]
     },
     {
         year: "2023 - 2026",
-        title: "Gérer des données de l’information",
+        title: "Gérer",
         school: "IUT de Marne-la-Vallée",
         acquiredSkills: [
-            "Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité"
+            "Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à dispositon toutes les informations pour un bon pilotage de l'entreprise."
         ],
         skills: [
-            "Modélisation des données",
-            "SQL avancé",
+            "Base de données",
+            "SQL",
             "Sécurité des données",
-            "Indexation",
-            "Optimisation DB"
+            "MongoDB",
+            "MySQL",
+            "PostgreSQL",
+            "Regex",
         ]
     },
     {
         year: "2023 - 2026",
-        title: "Conduire un projet",
+        title: "Conduire",
         school: "IUT de Marne-la-Vallée",
         acquiredSkills: [
-            "Appliquer une démarche de suivi de projet en fonction des besoins métiers"
+            "Satisfaire les besoin des utilisateurs au regarde de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles."
         ],
         skills: [
-            "Gestion de projet",
             "Méthodes agiles",
+            "SCRUM",
+            "Kanban",
+            "Gestion de projet",
             "Planification",
             "Suivi des risques",
             "Communication client"
@@ -86,17 +111,20 @@ const formationData: Formation[] = [
     },
     {
         year: "2023 - 2026",
-        title: "Travailler dans une équipe informatique",
+        title: "Collaborer",
         school: "IUT de Marne-la-Vallée",
         acquiredSkills: [
-            "Situer son rôle et ses missions au sein d’une équipe informatique"
+            "Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique."
         ],
         skills: [
-            "Collaboration",
-            "Communication interpersonnelle",
-            "Gestion de conflits",
-            "Travail en mode agile",
-            "Leadership collaboratif"
+            "YouTrack",
+            "Jira",
+            "Trello",
+            "GitHub",
+            "GitLab",
+            "Bitbucket",
+            "Confluence",
+            "Code Review",
         ]
     }
 ];
