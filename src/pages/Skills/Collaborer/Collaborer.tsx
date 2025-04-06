@@ -1,32 +1,46 @@
 import React from "react";
-import ProjectsSection, {Project} from "../../../components/SkillsPages/ProjectsSection.tsx";
+import ProjectsSection from "../../../components/SkillsPages/ProjectsSection.tsx";
 import SkillDescription from "../../../components/SkillsPages/SkillDescription.tsx";
 import SkillTechniques, {Technique} from "../../../components/SkillsPages/SkillTechniques.tsx";
 import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
+import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
 
-const projects: Project[] = [
+const projects: ProjectCardProps[] = [
     {
-        image: "https://via.placeholder.com/350x200",
-        title: "Projet 1",
-        subtitle: "Sous-titre Projet 1",
+        image: "public/projects/wikilinks.png",
+        title: "Wikilinks",
+        subtitle: "Jeu en ligne sur le thème de l'encyclopédie Wikipédia",
         points: [
-            "Description du point 1",
-            "Description du point 2",
-            "Description du point 3",
+            "Système de via chat, salon publics et privés via WebSocket",
+            "Personnalisation de l'expérience de jeu",
+            "Application mobile développé en Java (Android) avec WebView",
         ],
+        voirPlus: "https://github.com/Galaktik-hub/wikilinks"
     },
     {
-        image: "https://via.placeholder.com/350x200",
-        title: "Projet 2",
-        subtitle: "Sous-titre Projet 2",
+        image: "public/projects/bills.png",
+        title: "B.I.L.L.S",
+        subtitle: "Portail web pour la visualisation de flux monétaires",
         points: [
-            "Description du point A",
-            "Description du point B",
-            "Description du point C",
+            "Suivi des activités monétiques (transactions, impayés) pour les entreprises",
+            "Extraction de données au format CSV et XLS",
+            "Génération d'états et de rapports en PDF",
         ],
+        voirPlus: "https://github.com/Galaktik-hub/B2-S3-BILLS"
+    },
+    {
+        image: "public/projects/orbit.png",
+        title: "O.R.B.I.T.",
+        subtitle: "Application de recherche de plus court chemin intergalactique",
+        points: [
+            "Algorithmes A* implémenté en C par tas",
+            "Interface web réalisé en PHP et JavaScript",
+            "Gestion d'utilisateurs avec envoi de mail",
+        ],
+        voirPlus: "https://orbit.alexis-telle.fr/"
     },
 ];
 

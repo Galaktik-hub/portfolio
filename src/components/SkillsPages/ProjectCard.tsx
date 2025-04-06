@@ -19,7 +19,7 @@ function ProjectCard({ image, title, subtitle, points, voirPlus }: ProjectCardPr
                     ))}
                 </ul>
                 {voirPlus && (
-                    <a href={voirPlus}>
+                    <a href={voirPlus} target="_blank">
                         <button>Voir plus</button>
                     </a>
                 )}

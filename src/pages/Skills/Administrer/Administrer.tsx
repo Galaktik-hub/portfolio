@@ -17,17 +17,18 @@ const projects: ProjectCardProps[] = [
             "Configuration serveur Apache",
             "Configuration NAT, Firewall, DNS",
             "Mise en place d'un serveur HTTPS avec Let's Encrypt",
+            "Gestion d'utilisateurs pour la base de données",
         ],
         voirPlus: "https://alexis-telle.fr"
     },
     {
         image: "public/projects/serveur-web.jpg",
-        title: "Projet 2",
-        subtitle: "Sous-titre Projet 2",
+        title: "TP VPN & Proxy",
+        subtitle: "Mise en place d'un VPN et d'un Proxy avec Netkit",
         points: [
-            "Description du point A",
-            "Description du point B",
-            "Description du point C",
+            "Configuration du VPN avec OpenVPN",
+            "Configuration du Proxy avec Squid",
+            "Mise en place d'un réseau virtuel avec Netkit",
         ],
     },
 ];

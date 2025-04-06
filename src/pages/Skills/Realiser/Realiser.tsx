@@ -1,31 +1,45 @@
 import React from "react";
-import ProjectsSection, {Project} from "../../../components/SkillsPages/ProjectsSection.tsx";
+import ProjectsSection from "../../../components/SkillsPages/ProjectsSection.tsx";
 import SkillDescription from "../../../components/SkillsPages/SkillDescription.tsx";
 import SkillTechniques, {Technique} from "../../../components/SkillsPages/SkillTechniques.tsx";
 import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
+import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
 
-const projects: Project[] = [
+const projects: ProjectCardProps[] = [
     {
         image: "https://via.placeholder.com/350x200",
-        title: "Projet 1",
-        subtitle: "Sous-titre Projet 1",
+        title: "Text Editor",
+        subtitle: "Conception d'un éditeur de texte",
         points: [
-            "Description du point 1",
-            "Description du point 2",
-            "Description du point 3",
+            "Développement en C : manipulation de bits, commandes système, etc.",
+            "Utilisation des bibliothèques natives C",
+            "Fonctionnalités : ouverture, sauvegarde, recherche, etc.",
+            "Syntax highlighting selon le langage",
         ],
+        voirPlus: "https://github.com/Galaktik-hub/text-editor"
     },
     {
-        image: "https://via.placeholder.com/350x200",
-        title: "Projet 2",
-        subtitle: "Sous-titre Projet 2",
+        image: "public/projects/travia.png",
+        title: "Travia",
+        subtitle: "Réseau de transport intergalactique",
         points: [
-            "Description du point A",
-            "Description du point B",
-            "Description du point C",
+            "Gestion d'utilisateurs sécurisée",
+            "Interface de recherche de trajets",
+            "Panier d'achats et gestion de commandes",
+        ],
+        voirPlus: "https://github.com/Galaktik-hub/travia"
+    },
+    {
+        image: "public/projects/dev-android.jpg",
+        title: "TPs Android",
+        subtitle: "Développement d'applications Android avec Java",
+        points: [
+            "Réalisation d'applications hybride avec React",
+            "Création de vues personnalisées",
+            "Utilisation des API Android (notifications, GPS, etc.)",
         ],
     },
 ];

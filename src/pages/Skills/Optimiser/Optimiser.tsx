@@ -1,32 +1,35 @@
 import React from "react";
-import ProjectsSection, {Project} from "../../../components/SkillsPages/ProjectsSection.tsx";
+import ProjectsSection from "../../../components/SkillsPages/ProjectsSection.tsx";
 import SkillDescription from "../../../components/SkillsPages/SkillDescription.tsx";
 import SkillTechniques, {Technique} from "../../../components/SkillsPages/SkillTechniques.tsx";
 import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
+import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
 
-const projects: Project[] = [
+const projects: ProjectCardProps[] = [
     {
         image: "https://via.placeholder.com/350x200",
-        title: "Projet 1",
-        subtitle: "Sous-titre Projet 1",
+        title: "SortVisu",
+        subtitle: "Interface de visualisation d'algorithmes de tri",
         points: [
-            "Description du point 1",
-            "Description du point 2",
-            "Description du point 3",
+            "Algorithmes de tri implémentés en C",
+            "Interface graphique réalisé avec Gtk",
+            "Paramètres de tri personnalisables",
         ],
+        voirPlus: "https://github.com/Galaktik-hub/sortvisu"
     },
     {
-        image: "https://via.placeholder.com/350x200",
-        title: "Projet 2",
-        subtitle: "Sous-titre Projet 2",
+        image: "public/projects/orbit.png",
+        title: "O.R.B.I.T.",
+        subtitle: "Application de recherche de plus court chemin intergalactique",
         points: [
-            "Description du point A",
-            "Description du point B",
-            "Description du point C",
+            "Algorithmes A* implémenté en C par tas",
+            "Interface web réalisé en PHP et JavaScript",
+            "Gestion d'utilisateurs avec envoi de mail",
         ],
+        voirPlus: "https://orbit.alexis-telle.fr/"
     },
 ];
 
