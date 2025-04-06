@@ -42,6 +42,17 @@ const projects: ProjectCardProps[] = [
         ],
         voirPlus: "https://orbit.alexis-telle.fr/"
     },
+    {
+        image: "public/projects/train-tran.png",
+        title: "TrainTran",
+        subtitle: "Plateforme de résevation de train",
+        points: [
+            "Interface utilisateur avec React & TailwindCSS",
+            "Jeu de données de la SNCF",
+            "Gestion d'une base de données NoSQL avec MongoDB",
+        ],
+        voirPlus: "https://github.com/KirushieldDev/Train-tran"
+    },
 ];
 
 const techniques: Technique[] = [

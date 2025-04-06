@@ -10,7 +10,7 @@ import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx"
 
 const projects: ProjectCardProps[] = [
     {
-        image: "https://via.placeholder.com/350x200",
+        image: "public/projects/sortvisu.png",
         title: "SortVisu",
         subtitle: "Interface de visualisation d'algorithmes de tri",
         points: [
