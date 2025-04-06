@@ -363,7 +363,7 @@ a {
 
 /* Page Compétences */
 .competences-banner {
-    background: url('../public/banners/banner-realiser.jpg') no-repeat center;
+    background: url('../public/banners/banner-realiser.jpg') no-repeat center ;
     background-size: cover;
     padding: 100px 0;
     text-align: center;
@@ -393,6 +393,9 @@ a {
     margin-bottom: 20px;
     text-transform: uppercase;
     position: relative;
+    background: linear-gradient(to right, #67dd9a 0%, #b6f829 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-title {
