@@ -14,7 +14,7 @@ const projects: ProjectCardProps[] = [
         title: "Wikilinks",
         subtitle: "Jeu en ligne sur le thème de l'encyclopédie Wikipédia",
         points: [
-            "Système de via chat, salon publics et privés via WebSocket",
+            "Système de chat, salon publics et privés via WebSocket",
             "Personnalisation de l'expérience de jeu",
             "Application mobile développé en Java (Android) avec WebView",
         ],
