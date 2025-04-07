@@ -31,8 +31,9 @@ const formationData: Formation[] = [
             "TypeScript",
             "React",
             "Node.js",
-            "TailWindCSS",
+            "Tailwind CSS",
             "SQL",
+            "NoSQL",
             "Git",
         ]
     },
@@ -107,8 +108,10 @@ const formationData: Formation[] = [
         ],
         skills: [
             "Méthodes agiles",
-            "SCRUM",
+            "Scrum",
             "Kanban",
+            "YouTrack",
+            "Jira",
             "Gestion de projet",
             "Planification",
             "Suivi des risques",

@@ -14,7 +14,7 @@ const projects: ProjectCardProps[] = [
         title: "TrainTran",
         subtitle: "Plateforme de résevation de train",
         points: [
-            "Interface utilisateur avec React & TailwindCSS",
+            "Interface utilisateur avec React & Tailwind CSS",
             "Jeu de données de la SNCF",
             "Gestion d'une base de données NoSQL avec MongoDB",
         ],

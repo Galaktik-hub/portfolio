@@ -35,9 +35,9 @@ const projects: ProjectCardProps[] = [
     {
         image: "public/projects/dev-android.jpg",
         title: "TPs Android",
-        subtitle: "Développement d'applications Android avec Java",
+        subtitle: "Développement d'applications Android en Java",
         points: [
-            "Réalisation d'applications hybride avec React",
+            "Réalisation d'applications hybrides avec React",
             "Création de vues personnalisées",
             "Utilisation des API Android (notifications, GPS, etc.)",
         ],
@@ -49,13 +49,13 @@ const techniques: Technique[] = [
         title: "Développement",
         points: [
             "C/C++",
-            "Java (Design Patterns, POO)",
-            "Python",
-            "JavaScript/TypeScript (Développement web)",
+            "Java (Design Patterns)",
+            "Python (POO)",
+            "JavaScript/TypeScript (Développement web, WebSocket)",
             "HTML/CSS (Structuration et mise en forme)",
             "React (Développement web avancée)",
             "Android (Java)",
-            "PHP (BackEnd web)",
+            "PHP (Backend web)",
         ],
     },
     {

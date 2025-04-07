@@ -67,7 +67,7 @@ const techniques: Technique[] = [
 const description = "Une fois la solution technique développée, il faut s'assurer d'avoir les connaissances nécessaires pour la déployer, sinon elle sera difficile d'accès pour vos clients... " +
     "Ainsi, la compétence administrer nous assure d'avoir le savoir nécessaire pour concevoir et développer des applications communicantes, tout en maintenant un niveau de sécurité élevé. " +
     "Elle nout permet d'appliquer les normes de sécurité en vigueur et les bonnes pratiques architecturales et de sécurité tout en offrant une qualité de service optimale. " +
-    "Évidemment, à la fin, il nous est possible de déployer des solutions sur des serveurs et des services réseaux virtualisés tout en s'assurant que ces derniers sont sécurisés.";
+    "À la fin, il nous est possible de déployer des solutions sur des serveurs et des services réseaux virtualisés tout en s'assurant que ces derniers sont sécurisés.";
 
 const color = "administrer";
 

@@ -14,7 +14,7 @@ const projects: ProjectCardProps[] = [
         title: "Wikilinks",
         subtitle: "Jeu en ligne sur le thème de l'encyclopédie Wikipédia",
         points: [
-            "Système de chat, salon publics et privés via WebSocket",
+            "Système de chat, salons publics et privés via WebSocket",
             "Personnalisation de l'expérience de jeu",
             "Application mobile développé en Java (Android) avec WebView",
         ],
@@ -36,8 +36,8 @@ const projects: ProjectCardProps[] = [
         title: "O.R.B.I.T.",
         subtitle: "Application de recherche de plus court chemin intergalactique",
         points: [
-            "Algorithmes A* implémenté en C par tas",
-            "Interface web réalisé en PHP et JavaScript",
+            "Algorithmes A* implémenté en C avec utilisation de tas",
+            "Interface web réalisée en PHP et JavaScript",
             "Gestion d'utilisateurs avec envoi de mail",
         ],
         voirPlus: "https://orbit.alexis-telle.fr/"
@@ -47,7 +47,7 @@ const projects: ProjectCardProps[] = [
         title: "TrainTran",
         subtitle: "Plateforme de résevation de train",
         points: [
-            "Interface utilisateur avec React & TailwindCSS",
+            "Interface utilisateur avec React & Tailwind CSS",
             "Jeu de données de la SNCF",
             "Gestion d'une base de données NoSQL avec MongoDB",
         ],
@@ -81,7 +81,7 @@ const techniques: Technique[] = [
 const description = "Plus on est de dévs, plus on code ! Enfin, encore faut-il savoir comment travailler ensemble... " +
     "Les projets informatiques sont plus ambitieux les uns que les autres, il est alors nécessaire d'acquérir, de développer et d'exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique. " +
     "Situer son rôle et ses missions au sein d'une équipe, rendre compte de son activité professionnelle et s'intégrer sont des choses que tout développeur est ammené à faire au cours de sa carrière (probablement plusieurs fois). " +
-    "Il faut alors être en capacité de mobiliser des compétences interpersonnelles pour travailler dans une équipé informatique tout en développant une communication efficace et collaborative.";
+    "Il faut alors être en capacité de mobiliser des compétences interpersonnelles pour travailler dans une équipe informatique tout en développant une communication efficace et collaborative.";
 
 const color = "collaborer";
 
