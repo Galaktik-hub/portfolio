@@ -20,7 +20,7 @@ const Header: React.FC = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="../../public/TELLE%20Alexis_CV.pdf" target={"_blank"}>CV</a>
+                        <a href="../../public/TELLE_Alexis_CV.pdf" target={"_blank"}>CV</a>
                     </li>
                 </ul>
             </nav>

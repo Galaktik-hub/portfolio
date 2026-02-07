@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
                     <li>tellealexis at gmail.com</li>
                     <li>+(33)7. 68. 13. 86. 18</li>
                 </ul>
-                <p className="footer-copy">Site créé avec React & Tailwind CSS</p>
+                <p className="footer-copy">Site créé avec React</p>
             </div>
         </footer>
     );
