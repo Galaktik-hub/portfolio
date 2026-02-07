@@ -48,11 +48,13 @@ const techniques: Technique[] = [
     {
         title: "Développement",
         points: [
-            "C/C++",
+            "C",
             "Java (Design Patterns)",
-            "Python (POO)",
+            "Python",
+            "Rust",
+            "Go",
             "JavaScript/TypeScript (Développement web, WebSocket)",
-            "HTML/CSS (Structuration et mise en forme)",
+            "HTML/CSS",
             "React (Développement web avancée)",
             "Android (Java)",
             "PHP (Backend web)",
