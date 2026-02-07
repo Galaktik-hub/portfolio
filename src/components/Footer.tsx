@@ -8,10 +8,10 @@ const Footer: React.FC = () => {
                     N'hésitez pas à entrer en contact avec moi 👋
                 </p>
                 <ul className="footer-contact">
-                    <li>contact [at] alexis-telle.fr</li>
+                    <li>tellealexis at gmail.com</li>
                     <li>+(33)7. 68. 13. 86. 18</li>
                 </ul>
-                <p className="footer-copy">Site créé en React</p>
+                <p className="footer-copy">Site créé avec React & Tailwind CSS</p>
             </div>
         </footer>
     );

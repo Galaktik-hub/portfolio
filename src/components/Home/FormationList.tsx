@@ -150,7 +150,7 @@ const FormationComponent: React.FC<FormationProps> = ({ formation }) => {
                 <span className="forma-year">{formation.year}</span>
                 <div className="format-title-wrapper">
                     <h3 className="forma-title">
-                        {formation.title}
+                        "{formation.title}"
                         <br />
                     </h3>
                     <p>{formation.school}</p>
