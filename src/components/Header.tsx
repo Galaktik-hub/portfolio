@@ -3,7 +3,7 @@ import React from 'react';
 const Header: React.FC = () => {
     return (
         <header className="header container">
-            <h1>PORTFOLIO</h1>
+            <h1><a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>PORTFOLIO</a></h1>
             <nav>
                 <ul className="header-menu">
                     <li>

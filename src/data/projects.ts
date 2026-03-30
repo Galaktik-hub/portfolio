@@ -6,7 +6,7 @@ const projects: Project[] = [
         title: "Text Editor",
         subtitle: "Conception d'un éditeur de texte",
         year: 2025,
-        image: "projects/editor.png",
+        image: "projects-img/editor.png",
         technologies: ["C", "Bibliothèques natives C"],
         summary:
             "Un éditeur de texte développé en C offrant des fonctionnalités avancées telles que " +
@@ -30,7 +30,7 @@ const projects: Project[] = [
         title: "Travia",
         subtitle: "Réseau de transport intergalactique",
         year: 2025,
-        image: "projects/travia.png",
+        image: "projects-img/travia.png",
         technologies: ["PHP", "JavaScript", "MySQL", "HTML/CSS"],
         summary:
             "Application web de réservation de voyages intergalactiques avec gestion d'utilisateurs, " +
@@ -53,7 +53,7 @@ const projects: Project[] = [
         title: "SortVisu",
         subtitle: "Interface de visualisation d'algorithmes de tri",
         year: 2025,
-        image: "projects/sortvisu.png",
+        image: "projects-img/sortvisu.png",
         technologies: ["C", "GTK"],
         summary:
             "Application de visualisation interactive des algorithmes de tri avec interface graphique " +
@@ -76,7 +76,7 @@ const projects: Project[] = [
         title: "O.R.B.I.T.",
         subtitle: "Application de recherche de plus court chemin intergalactique",
         year: 2024,
-        image: "projects/orbit.png",
+        image: "projects-img/orbit.png",
         technologies: ["C", "PHP", "JavaScript", "HTML/CSS"],
         summary:
             "Application web de calcul du plus court chemin intergalactique utilisant l'algorithme A* " +
@@ -100,7 +100,7 @@ const projects: Project[] = [
         title: "Hébergement web",
         subtitle: "Mise en place d'un serveur web",
         year: 2024,
-        image: "projects/serveur-web.jpg",
+        image: "projects-img/serveur-web.jpg",
         technologies: ["Apache", "Linux", "Let's Encrypt", "DNS", "MySQL"],
         summary:
             "Configuration complète d'un serveur web incluant Apache, certificats HTTPS, " +
@@ -124,7 +124,7 @@ const projects: Project[] = [
         title: "Wikilinks",
         subtitle: "Jeu compétitif multijoueur de navigation Wikipédia en temps réel",
         year: 2025,
-        image: "projects/wikilinks.png",
+        image: "projects-img/wikilinks.png",
         technologies: [
             "React", "TypeScript", "Vite", "Mantine", "Tailwind CSS",
             "Node.js", "Express", "Socket.io", "MongoDB",
@@ -160,7 +160,7 @@ const projects: Project[] = [
         title: "B.I.L.L.S",
         subtitle: "Portail web pour la visualisation de flux monétaires",
         year: 2025,
-        image: "projects/bills.png",
+        image: "projects-img/bills.png",
         technologies: ["PHP", "JavaScript", "HTML/CSS", "PDF"],
         summary:
             "Portail web de suivi des activités monétiques permettant l'extraction de données " +
@@ -184,7 +184,7 @@ const projects: Project[] = [
         title: "TrainTran",
         subtitle: "Plateforme de réservation de train",
         year: 2025,
-        image: "projects/train-tran.png",
+        image: "projects-img/train-tran.png",
         technologies: ["React", "Tailwind CSS", "MongoDB", "Node.js"],
         summary:
             "Plateforme de réservation de trains utilisant les données de la SNCF " +
@@ -206,7 +206,7 @@ const projects: Project[] = [
         title: "ATS - Analyse de CV par IA",
         subtitle: "Système de suivi de candidatures avec analyse automatisée des CV par intelligence artificielle",
         year: 2026,
-        image: "projects/ats.png",
+        image: "projects-img/ats.png",
         technologies: [
             "Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui",
             "Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic",
@@ -244,7 +244,7 @@ const projects: Project[] = [
         title: "Plateforme E-Learning",
         subtitle: "Plateforme de formation en ligne avec chapitres multiformat et module VR 360°",
         year: 2026,
-        image: "projects/e-learning.webp",
+        image: "projects-img/e-learning.webp",
         technologies: [
             "Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui",
             "Node.js", "PostgreSQL", "Prisma", "NextAuth v5", "Docker", "GitLab CI",
@@ -281,7 +281,7 @@ const projects: Project[] = [
         title: "Memphis & sa Nécropole",
         subtitle: "Site web multilingue de médiation culturelle en partenariat avec l'UNESCO",
         year: 2024,
-        image: "projects/memphis-unesco.webp",
+        image: "projects-img/memphis-unesco.webp",
         technologies: ["HTML", "CSS", "JavaScript", "PHP", "PostgreSQL"],
         summary:
             "Site web trilingue de médiation culturelle sur le patrimoine mondial de Memphis et sa nécropole " +
