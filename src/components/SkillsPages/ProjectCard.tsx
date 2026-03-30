@@ -1,30 +1,37 @@
-export interface ProjectCardProps {
-    image: string;
-    title: string;
-    subtitle: string;
-    points: string[];
-    voirPlus?: string;
+import { Link } from "react-router-dom";
+import { Project } from "../../data/types";
+
+interface ProjectCardProps {
+    project: Project;
 }
 
-function ProjectCard({ image, title, subtitle, points, voirPlus }: ProjectCardProps) {
+function ProjectCard({ project }: ProjectCardProps) {
     return (
-        <div className="project-card" style={{ backgroundImage: `url(${image})` }}>
-            <div className="overlay"></div>
-            <div className="project-card-content">
-                <h3 className="project-card-title">{title}</h3>
-                <h4 className="project-card-subtitle">{subtitle}</h4>
-                <ul>
-                    {points.map((point, index) => (
-                        <li key={index}>{point}</li>
-                    ))}
-                </ul>
-                {voirPlus && (
-                    <a href={voirPlus} target="_blank">
-                        <button>Voir plus</button>
-                    </a>
-                )}
+        <Link to={`/projects/${project.slug}`} className="project-card-link">
+            <div
+                className="project-card"
+                style={{ backgroundImage: `url(/${project.image})` }}
+            >
+                <div className="overlay"></div>
+                <div className="project-card-content">
+                    <h3 className="project-card-title">{project.title}</h3>
+                    <h4 className="project-card-subtitle">{project.subtitle}</h4>
+                    <div className="project-card-tags">
+                        {project.technologies.map((tech, index) => (
+                            <span key={index} className="project-card-tag">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                    <ul>
+                        {project.keyFeatures.map((feature, index) => (
+                            <li key={index}>{feature}</li>
+                        ))}
+                    </ul>
+                    <span className="project-card-cta">Voir le projet →</span>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 }
 

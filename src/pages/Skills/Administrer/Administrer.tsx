@@ -6,32 +6,9 @@ import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
-import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
+import { getProjectsBySlugs } from "../../../data/projects.ts";
 
-const projects: ProjectCardProps[] = [
-    {
-        image: "public/projects/serveur-web.jpg",
-        title: "Hébergement web",
-        subtitle: "Mise en place d'un serveur web",
-        points: [
-            "Configuration serveur Apache",
-            "Configuration NAT, Firewall, DNS",
-            "Mise en place d'un serveur HTTPS avec Let's Encrypt",
-            "Gestion d'utilisateurs pour la base de données",
-        ],
-        voirPlus: "https://alexis-telle.fr"
-    },
-    {
-        image: "public/projects/serveur-web.jpg",
-        title: "TP VPN & Proxy",
-        subtitle: "Mise en place d'un VPN et d'un Proxy avec Netkit",
-        points: [
-            "Configuration du VPN avec OpenVPN",
-            "Configuration du Proxy avec Squid",
-            "Mise en place d'un réseau virtuel avec Netkit",
-        ],
-    },
-];
+const projects = getProjectsBySlugs(["hebergement-web"]);
 
 const techniques: Technique[] = [
     {

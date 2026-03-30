@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const StickyBackArrow: React.FC = () => {
+    const navigate = useNavigate();
+
     const handleBack = () => {
-        window.location.href = '/';
+        navigate(-1);
     };
 
     return (

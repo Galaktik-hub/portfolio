@@ -6,43 +6,9 @@ import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
-import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
+import { getProjectsBySlugs } from "../../../data/projects.ts";
 
-const projects: ProjectCardProps[] = [
-    {
-        image: "public/projects/editor.png",
-        title: "Text Editor",
-        subtitle: "Conception d'un éditeur de texte",
-        points: [
-            "Développement en C : manipulation de bits, commandes système, etc.",
-            "Utilisation des bibliothèques natives C",
-            "Fonctionnalités : ouverture, sauvegarde, recherche, etc.",
-            "Syntax highlighting selon le langage",
-        ],
-        voirPlus: "https://github.com/Galaktik-hub/text-editor"
-    },
-    {
-        image: "public/projects/travia.png",
-        title: "Travia",
-        subtitle: "Réseau de transport intergalactique",
-        points: [
-            "Gestion d'utilisateurs sécurisée",
-            "Interface de recherche de trajets",
-            "Panier d'achats et gestion de commandes",
-        ],
-        voirPlus: "https://github.com/Galaktik-hub/travia"
-    },
-    {
-        image: "public/projects/dev-android.jpg",
-        title: "TPs Android",
-        subtitle: "Développement d'applications Android en Java",
-        points: [
-            "Réalisation d'applications hybrides avec React",
-            "Création de vues personnalisées",
-            "Utilisation des API Android (notifications, GPS, etc.)",
-        ],
-    },
-];
+const projects = getProjectsBySlugs(["text-editor", "ats", "e-learning", "wikilinks"]);
 
 const techniques: Technique[] = [
     {

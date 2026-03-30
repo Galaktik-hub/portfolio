@@ -1,9 +1,10 @@
 import React from "react";
-import ProjectCard, {ProjectCardProps} from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
+import { Project } from "../../data/types";
 
 interface ProjectsSectionProps {
     color: string;
-    projects: ProjectCardProps[];
+    projects: Project[];
 }
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects, color }) => {
@@ -11,8 +12,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects, color }) =>
         <section className="section">
             <h2 className={`section-title section-title-${color}`}>Projets</h2>
             <div className="project-cards">
-                {projects.map((project, index) => (
-                    <ProjectCard key={index} {...project} />
+                {projects.map((project) => (
+                    <ProjectCard key={project.slug} project={project} />
                 ))}
             </div>
         </section>

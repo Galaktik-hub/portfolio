@@ -6,10 +6,15 @@ import Administrer from "./pages/Skills/Administrer/Administrer.tsx";
 import Gerer from "./pages/Skills/Gerer/Gerer.tsx";
 import Conduire from "./pages/Skills/Conduire/Conduire.tsx";
 import Collaborer from "./pages/Skills/Collaborer/Collaborer.tsx";
+import ProjectsListPage from "./pages/Projects/ProjectsListPage.tsx";
+import ProjectDetailPage from "./pages/Projects/ProjectDetailPage.tsx";
+
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const AppRoutes = () => {
     return (
         <Router>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/realiser" element={<Realiser />} />
@@ -18,6 +23,8 @@ const AppRoutes = () => {
                 <Route path="/gerer" element={<Gerer />}/>
                 <Route path="/conduire" element={<Conduire />}/>
                 <Route path="/collaborer" element={<Collaborer />}/>
+                <Route path="/projects" element={<ProjectsListPage />}/>
+                <Route path="/projects/:slug" element={<ProjectDetailPage />}/>
             </Routes>
         </Router>
     );

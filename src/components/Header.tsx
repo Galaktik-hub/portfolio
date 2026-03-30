@@ -7,6 +7,9 @@ const Header: React.FC = () => {
             <nav>
                 <ul className="header-menu">
                     <li>
+                        <a href="/projects">Projets</a>
+                    </li>
+                    <li>
                         <a href="#contact">Contact</a>
                     </li>
                     <li>

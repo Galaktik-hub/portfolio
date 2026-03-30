@@ -6,32 +6,9 @@ import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
-import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
+import { getProjectsBySlugs } from "../../../data/projects.ts";
 
-const projects: ProjectCardProps[] = [
-    {
-        image: "public/projects/sortvisu.png",
-        title: "SortVisu",
-        subtitle: "Interface de visualisation d'algorithmes de tri",
-        points: [
-            "Algorithmes de tri implémentés en C",
-            "Interface graphique réalisée avec Gtk",
-            "Paramètres de tri personnalisables",
-        ],
-        voirPlus: "https://github.com/Galaktik-hub/sortvisu"
-    },
-    {
-        image: "public/projects/orbit.png",
-        title: "O.R.B.I.T.",
-        subtitle: "Application de recherche de plus court chemin intergalactique",
-        points: [
-            "Algorithmes A* implémenté en C avec utilisation de tas",
-            "Interface web réalisée en PHP et JavaScript",
-            "Gestion d'utilisateurs avec envoi de mail",
-        ],
-        voirPlus: "https://orbit.alexis-telle.fr/"
-    },
-];
+const projects = getProjectsBySlugs(["sortvisu", "ats", "wikilinks", "orbit"]);
 
 const techniques: Technique[] = [
     {

@@ -6,32 +6,9 @@ import Banner from "../../../components/SkillsPages/Banner.tsx";
 import Header from "../../../components/Header.tsx";
 import Footer from "../../../components/Footer.tsx";
 import StickyBackArrow from "../../../components/SkillsPages/StickyBackArrow.tsx";
-import {ProjectCardProps} from "../../../components/SkillsPages/ProjectCard.tsx";
+import { getProjectsBySlugs } from "../../../data/projects.ts";
 
-const projects: ProjectCardProps[] = [
-    {
-        image: "public/projects/train-tran.png",
-        title: "TrainTran",
-        subtitle: "Plateforme de résevation de train",
-        points: [
-            "Interface utilisateur avec React & Tailwind CSS",
-            "Jeu de données de la SNCF",
-            "Gestion d'une base de données NoSQL avec MongoDB",
-        ],
-        voirPlus: "https://github.com/KirushieldDev/Train-tran"
-    },
-    {
-        image: "public/projects/travia.png",
-        title: "Travia",
-        subtitle: "Réseau de transport intergalactique",
-        points: [
-            "Gestion d'utilisateurs sécurisée",
-            "Interface de recherche de trajets",
-            "Panier d'achats et gestion de commandes",
-        ],
-        voirPlus: "https://github.com/Galaktik-hub/travia"
-    },
-];
+const projects = getProjectsBySlugs(["traintran", "bills", "ats", "travia"]);
 
 const techniques: Technique[] = [
     {
