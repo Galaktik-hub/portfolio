@@ -72,14 +72,24 @@ const ProjectDetailPage: React.FC = () => {
                 </div>
 
                 <div className="project-detail-actions">
-                    {project.link && (
+                    {project.demoLink && (
                         <a
-                            href={project.link}
+                            href={project.demoLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-project-link"
                         >
-                            Voir le projet en ligne ↗
+                            Voir la démo ↗
+                        </a>
+                    )}
+                    {project.sourceLink && (
+                        <a
+                            href={project.sourceLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-project-source"
+                        >
+                            Code source ↗
                         </a>
                     )}
                     <Link to="/projects" className="btn-back-projects">

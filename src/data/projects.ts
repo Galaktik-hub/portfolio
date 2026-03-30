@@ -23,7 +23,7 @@ const projects: Project[] = [
             "Fonctionnalités : ouverture, sauvegarde, recherche, etc.",
             "Syntax highlighting selon le langage",
         ],
-        link: "https://github.com/Galaktik-hub/text-editor",
+        sourceLink: "https://gitlab.com/galaktik-group/personnal/text-editor",
     },
     {
         slug: "travia",
@@ -46,7 +46,7 @@ const projects: Project[] = [
             "Interface de recherche de trajets",
             "Panier d'achats et gestion de commandes",
         ],
-        link: "https://github.com/Galaktik-hub/travia",
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-2/travia",
     },
     {
         slug: "sortvisu",
@@ -69,7 +69,7 @@ const projects: Project[] = [
             "Interface graphique réalisée avec GTK",
             "Paramètres de tri personnalisables",
         ],
-        link: "https://github.com/Galaktik-hub/sortvisu",
+        sourceLink: "https://gitlab.com/galaktik-group/personnal/sortvisu",
     },
     {
         slug: "orbit",
@@ -92,7 +92,8 @@ const projects: Project[] = [
             "Interface web réalisée en PHP et JavaScript",
             "Gestion d'utilisateurs avec envoi de mail",
         ],
-        link: "https://orbit.alexis-telle.fr/",
+        demoLink: "https://orbit.alexis-telle.fr/",
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-2/ORBIT",
     },
     {
         slug: "hebergement-web",
@@ -116,7 +117,7 @@ const projects: Project[] = [
             "Mise en place d'un serveur HTTPS avec Let's Encrypt",
             "Gestion d'utilisateurs pour la base de données",
         ],
-        link: "https://alexis-telle.fr",
+        demoLink: "https://alexis-telle.fr",
     },
     {
         slug: "wikilinks",
@@ -151,7 +152,8 @@ const projects: Project[] = [
             "Application mobile Android native en Java avec WebView, géolocalisation et notifications push",
             "Pipeline CI/CD automatisé avec GitLab et déploiement Docker",
         ],
-        link: "https://github.com/Galaktik-hub/wikilinks",
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-2/Wikilinks",
+        demoLink: "https://wikilinks.alexis-telle.fr"
     },
     {
         slug: "bills",
@@ -174,7 +176,8 @@ const projects: Project[] = [
             "Extraction de données au format CSV et XLS",
             "Génération d'états et de rapports en PDF",
         ],
-        link: "https://github.com/Galaktik-hub/B2-S3-BILLS",
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-2/BILLS",
+        demoLink: "https://bills.alexis-telle.fr"
     },
     {
         slug: "traintran",
@@ -196,7 +199,7 @@ const projects: Project[] = [
             "Jeu de données de la SNCF",
             "Gestion d'une base de données NoSQL avec MongoDB",
         ],
-        link: "https://github.com/KirushieldDev/Train-tran",
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-2/Train-tran",
     },
     {
         slug: "ats",
@@ -234,6 +237,7 @@ const projects: Project[] = [
             "Authentification JWT avec gestion des rôles et panel d'administration",
             "~30 endpoints REST, ~150 tests unitaires, 10 000+ lignes de code",
         ],
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-3/ats-plurielles",
     },
     {
         slug: "e-learning",
@@ -270,6 +274,7 @@ const projects: Project[] = [
             "Tableau de bord analytique pour les administrateurs",
             "10 600+ lignes de code, 30+ endpoints REST, 10 modèles de données",
         ],
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-3/elearning-plurielles",
     },
     {
         slug: "memphis-unesco",
@@ -297,6 +302,8 @@ const projects: Project[] = [
             "Articles dynamiques stockés en base de données avec gestion multilingue et requêtes préparées",
             "10+ pages, 225 commits, livraison en deux phases (statique puis dynamique)",
         ],
+        sourceLink: "https://gitlab.com/galaktik-group/university/but-1/memphis-unesco",
+        demoLink: "https://memphis.alexis-telle.fr",
     },
 ];
 

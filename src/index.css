@@ -824,6 +824,50 @@ a {
     margin-bottom: 12px;
 }
 
+.project-card-summary {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.project-card-feature {
+    position: relative;
+    padding-left: 15px;
+    font-size: 0.85rem;
+    color: #ccc;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-card-feature::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #67dd9a;
+    font-size: 0.9rem;
+}
+
 .project-card-tag {
     font-size: 0.75rem;
     padding: 3px 10px;
@@ -1145,13 +1189,14 @@ a {
 }
 
 .btn-project-link,
-.btn-back-projects {
+.btn-back-projects,
+.btn-project-source {
     display: inline-block;
     padding: 14px 28px;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 8px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     text-decoration: none;
     cursor: pointer;
 }
@@ -1159,11 +1204,25 @@ a {
 .btn-project-link {
     background: linear-gradient(135deg, #67dd9a, #b6f829);
     color: #141414;
+    border: 2px solid transparent;
 }
 
 .btn-project-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(103, 221, 154, 0.3);
+}
+
+.btn-project-source {
+    background: #141414;
+    color: #ffffff;
+    border: 2px solid transparent;
+}
+
+.btn-project-source:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background: #333333;
+    border-color: transparent;
 }
 
 .btn-back-projects {

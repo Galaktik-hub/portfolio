@@ -8,5 +8,6 @@ export interface Project {
     summary: string;
     description: string;
     keyFeatures: string[];
-    link?: string;
+    demoLink?: string;
+    sourceLink?: string;
 }
